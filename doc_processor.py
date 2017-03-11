@@ -34,7 +34,7 @@ def read_pdf(source):
     return numPages, text
 
 print uuid.uuid4() # generate random uuid 
-text = read_pdf('esma_guidelines.pdf')
+lengthDoc, text = read_pdf('esma_guidelines.pdf')
 tokens = get_tokens(text)
 filtered = [w for w in tokens if not w in stopwords.words('english')]
 count = Counter(filtered)
