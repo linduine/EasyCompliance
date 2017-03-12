@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Responsive Admin</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+     
+           
+          
+    <div id="wrapper">
+         <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/logo.png" />
+                    </a>
+                </div>
+              
+                 <span class="logout-spn" >
+                  <a href="#" style="color:#fff;">LOGOUT</a>  
+
+                </span>
+            </div>
+        </div>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                 
+
+ <li >
+                        <a href="index.html" ><i class="fa fa-desktop "></i>Dashboard <span class="badge">Included</span></a>
+                    </li>
+                   
+
+                    <li>
+                        <a href="ui.html"><i class="fa fa-table "></i>UI Elements  <span class="badge">Included</span></a>
+                    </li>
+                    <li class="active-link">
+                        <a href="blank.html"><i class="fa fa-edit "></i>Blank Page  <span class="badge">Included</span></a>
+                    </li>
+                </ul>
+                            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                     <h2>DOCUMENTS </h2>   
+                    </div>
+                </div>              
+                 <!-- /. ROW  -->
+                  <hr />
+                  <ul class="nav top-menu">                    
+                        <li>
+                            <form class="navbar-form">
+                                <h3 style="display: inline;">Search documents</h3>
+								<div class="input-group input-group">
+								  <input type="text" class="form-control" placeholder="Titles, topics, key words...">
+								  <div class="input-group-btn">
+									<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+								  </div>
+								</div>
+                            </form>
+                        </li>                 
+                    </ul>
+					<ul class="nav top-menu">                    
+                        <li>
+                            <form class="navbar-form">
+                                <h3>Categories</h3>
+								<div class="dropdown">
+								  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose
+								  <span class="caret"></span></button>
+								  <ul class="dropdown-menu">
+									<li><a href="#">Technical Regulations</a></li>
+									<li><a href="#">Data Obligations</a></li>
+									<li><a href="#">Impact Analysis</a></li>
+								  </ul>
+								</div>
+                            </form>
+                        </li>                 
+                    </ul>             
+                 <!-- /. ROW  -->
+                  <ul class="nav top-menu">                    
+                        <li>
+							<form class="navbar-form-lg" action="cgi-bin/docprocessor.py">
+                                <h3>Add new document</h3>
+								<div class="input-group input-group">
+								  <input type="text" class="form-control" placeholder="URL..." name="docURL">
+								  <div class="input-group-btn">
+									<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+								  </div>
+								</div>
+                            </form>
+                        </li>                    
+                    </ul>
+                  <hr />
+              
+                 <!-- /. ROW  -->           
+    </div>
+             <!-- /. PAGE INNER  -->
+            </div>
+         <!-- /. PAGE WRAPPER  -->
+        </div>
+    <div class="footer">
+      
+    
+             <div class="row">
+                <div class="col-lg-12" >
+                    2017 EasyCompliance | Drafted at: SIXHackathon 2017
+                </div>
+        </div>
+        </div>
+          
+
+     <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    
+   
+</body>
+</html>
